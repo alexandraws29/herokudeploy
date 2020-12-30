@@ -5,6 +5,7 @@ var getAndRenderNotes = function() {
     });
 };
 
+// Event handlers for the buttons
 $saveNoteBtn.on("click", handleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
 
@@ -14,5 +15,5 @@ $noteList.on("click", ".delete-note", handleNoteDelete);
 $noteTitle.on("keyup", handleRenderSaveBtn);
 $noteText.on("keyup", handleRenderSaveBtn);
 
-// Gents and renders the initial list of notes
+// Gets and renders the initial list of notes
 getAndRenderNotes();
